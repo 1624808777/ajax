@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+ 
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+    <script type="text/javascript" src="js/login.js"></script>
+</head>
+ 
+<body>
+<div id="login_frame">
+ 
+    <p id="image_logo"><img src="images/login/登入.jpg" style="width: 20px; height:20px"></p>
+ 
+    <form method="post" action="login.js">
+ 
+        <p><label class="label_input">用户名:</label><input type="text" id="username" placeholder="请输入用户名" class="text_field" style="width: 177px; "/></p>
+        <p><label class="label_input">密&nbsp;&nbsp;&nbsp;&nbsp;码:</label><input type="text" id="password" placeholder="请输入密码" class="text_field" style="width: 173px; "/></p>
+		<p><label class="label_input">验证码:</label><input type="text" id="vcode" placeholder="请输入验证码" class="text_field" style="width: 100px; "/>
+		<img id="image" border="0"  onclick="refresh()" src=""servlet/CreateVerfifyCodeImage.do" title="点击更换图片" style="height: 35px; width: 70px; ">  </p>
+		
+        <div id="login_control">
+            <input type="checkbox" name="" id=""><font size="3">自动登录</font>
+            <table  align="right">
+            <tr><td><a href="https://aq.qq.com/cn2/psw_mgr/psw_mgr_index" ><small>忘记登录密码？&nbsp;&nbsp;</small></a></td></tr>
+            </table>
+        </div>
+   		 <a href="https://www.wtu.edu.cn/">
+   			<input class="label_input" type="submit" value="登录" style="width: 100px; height: 35px;"></a>
+    		<input  class="label_input" type="submit" value="注册" style="width: 100px; height: 35px;">    
+    </form>
+</div>
+ 
+</body>
+</html>
+ 
